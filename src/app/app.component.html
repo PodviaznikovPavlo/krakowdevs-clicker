@@ -1,1 +1,21 @@
-<h1>clicker</h1>
+<div class="clicker-container">
+  <!-- <div class="email-container">
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput [(ngModel)]="clicker.email" [ngModelOptions]="{standalone: true}" placeholder="Email">
+      </mat-form-field>
+    </form>
+
+    <button (click)="onGetUserClicks()" aria-label="get">
+      Get
+    </button>
+  </div> -->
+  
+  <div class="content-container">
+    <span>{{clicker.clicksNum}}</span>
+
+    <button mat-icon-button color="primary" (click)="onClick()" aria-label="Example icon button with a home icon">
+      <mat-icon>mouse</mat-icon>
+    </button>
+  </div>
+</div>
